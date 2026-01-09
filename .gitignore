@@ -1,0 +1,67 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+.kotlin
+
+### Build outputs ###
+out/
+*.jar
+*.war
+*.ear
+*.class
+
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+
+### Project specific ###
+check.http
+remove_comments.ps1
+ViewDb.class
+Building
+Running
+dist-jpackage/
+
+### Runtime data ###
+ftp-root/ftp.db
+ftp-root/shared/
+ftp-root/users/
+*.db
+*.sqlite
+*.sqlite3
+
+### Comprehensive exclusions ###
+# Exclude all build outputs recursively
+**/target/
+**/out/
+**/dist-jpackage/
+**/.idea/
+**/.vscode/

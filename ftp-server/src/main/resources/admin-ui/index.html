@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FTP Admin Panel</title>
+  <link rel="stylesheet" href="/app.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img class="logoimg" src="/logo.jpg" alt="FTP logo" />
+    </div>
+
+    <nav class="nav" aria-label="Primary">
+      <a class="navlink" href="#/users" data-route="users">Users</a>
+      <a class="navlink" href="#/limits" data-route="limits">Server limits</a>
+      <a class="navlink" href="#/permissions" data-route="permissions">Permissions</a>
+      <a class="navlink" href="#/root" data-route="root">Root</a>
+      <a class="navlink" href="#/stats" data-route="stats">Stats</a>
+    </nav>
+
+    <!-- Auth removed - no token required -->
+  </header>
+
+  <main class="container">
+    <div id="banner" class="banner" hidden></div>
+    <div id="view"></div>
+  </main>
+
+  <dialog id="modal" class="modal">
+    <div class="modalcard">
+      <div class="modalhead">
+        <div id="modalTitle" class="modaltitle">Dialog</div>
+        <button class="iconbtn" type="button" onclick="closeModal()" aria-label="Close">X</button>
+      </div>
+      <div id="modalBody" class="modalbody"></div>
+      <div id="modalActions" class="modalactions"></div>
+    </div>
+  </dialog>
+
+  <script defer src="/app.js"></script>
+</body>
+</html>
+
+
